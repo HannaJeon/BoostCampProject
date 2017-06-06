@@ -9,9 +9,9 @@
 import Foundation
 
 class ModelResultTable {
-    private var classAvg : Double
-    private var personalGrade : [String : String]
-    private var passStudents : [String]
+    private let classAvg : Double
+    private let personalGrade : [String : String]
+    private let passStudents : [String]
     
     init(classAvg: Double, personalGrade: [String : String], passStudents: [String]) {
         self.classAvg = classAvg
