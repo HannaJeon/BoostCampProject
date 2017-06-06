@@ -17,15 +17,10 @@ class CheckStudents {
         students.forEach { (student) in
             let name = student.getStudent()["name"] as! String
             let grade = student.getStudent()["grade"] as! [String : Double]
-            var sumOfCourse = 0.0
-            
-            for course in grade {
-                sumOfCourse += course.value
-            }
-            
-            let personalAvg = sumOfCourse / Double(grade.count)
+            let personalAvg = (grade.values.reduce(0) { $0 + $1 }) / Double(grade.count)
+
             totalAvg += personalAvg
-            
+
             if 90 <= personalAvg && personalAvg <= 100 {
                 personalGrade[name] = "A"
             } else if 80 <= personalAvg && personalAvg < 90 {

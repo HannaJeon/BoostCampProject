@@ -10,4 +10,4 @@ import Foundation
 
 let students = JsonSerialization().jsonSerialization()
 let resultTable = CheckStudents().checkStudent(students: students)
-Output().output(resultTable: resultTable)
+Output().makeTextFile(resultTable: resultTable)

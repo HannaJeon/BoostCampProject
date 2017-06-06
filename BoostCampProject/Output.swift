@@ -9,7 +9,7 @@
 import Foundation
 
 class Output {
-    func output(resultTable: ModelResultTable) {
+    func makeTextFile(resultTable: ModelResultTable) {
         let resultTable = resultTable.getResultTable()
         let classAvg = Double(round(100 * (resultTable["classAvg"] as! Double)) / 100)
         let personalGrade = (resultTable["personalGrade"] as! [String : String]).sorted{ $0.key < $1.key }

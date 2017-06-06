@@ -272,6 +272,7 @@
 				B57D57581EE5DFCE00059EA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
