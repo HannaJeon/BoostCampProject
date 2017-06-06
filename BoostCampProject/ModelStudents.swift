@@ -1,5 +1,5 @@
 //
-//  Students.swift
+//  ModelStudents.swift
 //  BoostCampProject
 //
 //  Created by HannaJeon on 2017. 6. 6..
